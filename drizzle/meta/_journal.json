@@ -1,0 +1,34 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1775824946057,
+      "tag": "0000_thin_omega_red",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1775825058755,
+      "tag": "0001_quick_cable",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1775842288930,
+      "tag": "0002_concerned_ken_ellis",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1775929330621,
+      "tag": "0003_futuristic_madripoor",
+      "breakpoints": true
+    }
+  ]
+}
