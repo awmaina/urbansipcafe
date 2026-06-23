@@ -19,11 +19,21 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <script
-      type="module"
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
+    <script>
+      (function() {
+        var endpoint = "%VITE_ANALYTICS_ENDPOINT%";
+        var websiteId = "%VITE_ANALYTICS_WEBSITE_ID%";
+        
+        // Only inject the script if the environment variables have been substituted by Vite
+        if (endpoint && endpoint.indexOf('%') !== 0) {
+          var script = document.createElement('script');
+          script.defer = true;
+          script.src = endpoint + '/umami';
+          script.setAttribute('data-website-id', websiteId);
+          document.body.appendChild(script);
+        }
+      })();
+    </script>
   </body>
 
 </html>
