@@ -3,7 +3,6 @@ server
 drizzle
 .manus-logs
 *.log
-patches
 .DS_Store
 dist
 dist/public
